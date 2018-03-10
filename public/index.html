@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html ng-app="TopLineHr">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/desktop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../app.js">
+    </script>
+    <title>Top Line HR</title>
+  </head>
+  <body>
+
+    <header ng-controller="MenuController as ctrl">
+      <nav class="mobile">
+        <div class="header row">
+          <i class="material-icons menu-icon" ng-click="ctrl.mobileMenu = !ctrl.mobileMenu">menu</i>
+          <img class="logo-sm" src="../images/TopLineHRLogo.png">
+        </div>
+      </nav>
+
+      <nav class="desktop header row">
+        <div class="column">
+          <img src="../images/TopLineHRLogo.png">
+          <h6 class="logo-text">Lorem ipsum dolor sit amet</h5>
+        </div>
+        <div class="column menu">
+          <div class="row menu-sm">
+            <a class="menu-link row" href="#">
+              <h5>Events</h5>
+            </a>
+            <a class="menu-link row" href="#">
+              <h5>Blog</h5>
+            </a>
+            <a class="menu-link row" href="#">
+              <h5>Contact</h5>
+            </a>
+            <a class="menu-link row" href="#">
+              <h5>About</h5>
+            </a>
+          </div>
+          <div class="row menu-bg">
+            <a class="menu-link row" href="#">
+              <h4>Coaching</h4>
+            </a>
+            <a class="menu-link row" href="#">
+              <h4>Executive Teams</h4>
+            </a>
+            <a class="menu-link row" href="#">
+              <h4>Sales</h4>
+            </a>
+            <a class="menu-link row" href="#">
+              <h4>HR</h4>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="mobile menu-bkgd" ng-click="ctrl.mobileMenu = false" ng-class="ctrl.mobileMenu? 'slide' : ''">
+      </div>
+      <div class="slide-menu column" ng-class="ctrl.mobileMenu? 'slide' : ''">
+        <a class="menu-link row" href="#">
+          <h5>Events</h5>
+          <i class="material-icons arrow-icon">chevron_right</i>
+        </a>
+        <a class="menu-link row" href="#">
+          <h5>Blog</h5>
+          <i class="material-icons arrow-icon">chevron_right</i>
+        </a>
+        <a class="menu-link row" href="#">
+          <h5>Contact</h5>
+          <i class="material-icons arrow-icon">chevron_right</i>
+        </a>
+        <a class="menu-link row" href="#">
+          <h5>About</h5>
+          <i class="material-icons arrow-icon">chevron_right</i>
+        </a>
+        <a class="menu-link row" href="#">
+          <h5>Coaching</h5>
+          <i class="material-icons arrow-icon">chevron_right</i>
+        </a>
+        <a class="menu-link row" href="#">
+          <h5>Executive Teams</h5>
+          <i class="material-icons arrow-icon">chevron_right</i>
+        </a>
+        <a class="menu-link row" href="#">
+          <h5>Sales</h5>
+          <i class="material-icons arrow-icon">chevron_right</i>
+        </a>
+        <a class="menu-link row" href="#">
+          <h5>HR</h5>
+          <i class="material-icons arrow-icon">chevron_right</i>
+        </a>
+      </div>
+    </header>
+
+    <main ng-view>
+    </main>
+
+    <footer>
+      <img class="logo-sm" src="../images/TopLineHRLogo.png">
+      <h2>Contact Us</h2>
+      <div class="section">
+        <section class="link-width">
+          <div class="sub-section">
+            <h5>805 Merchant Lee Ct</h5>
+            <h5>Manakin Sabot, VA</h5>
+            <h5>23103 US</h5>
+          </div>
+          <div class="sub-section">
+            <h5>+1.4344093357</h5>
+          </div>
+          <div class="sub-section">
+            <a href="mailto:tom.corbitt@toplinehr.com"><h5>tom.corbitt@toplinehr.com</h5></a>
+          </div>
+        </section>
+        <section class="row link-width">
+          <div class="sub-section link-width">
+            <a href="#">
+              <h5>Events</h5>
+            </a>
+            <a href="#">
+              <h5>Blog</h5>
+            </a>
+            <a href="#">
+              <h5>Contact</h5>
+            </a>
+            <a href="#">
+              <h5>About</h5>
+            </a>
+          </div>
+          <div class="sub-section link-width">
+            <a href="#">
+              <h5>Coaching</h5>
+            </a>
+            <a href="#">
+              <h5>Executive Teams</h5>
+            </a>
+            <a href="#">
+              <h5>Sales</h5>
+            </a>
+            <a href="#">
+              <h5>HR</h5>
+            </a>
+          </div>
+        </section>
+        <section class="link-width">
+          <div class="row">
+            <a href="#"><img src="../images/twitter.svg" class="social-media-icon"></a>
+            <a href="#"><img src="../images/linkedin-logo.svg" class="social-media-icon"></a>
+            <a href="#"><img src="../images/facebook-letter-logo.svg" class="social-media-icon"></a>
+          </div>
+        </section>
+      </div>
+      <h6>
+        Icons made by <a href="https://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>      
+      </h6>
+    </footer>
+
+  </body>
+</html>

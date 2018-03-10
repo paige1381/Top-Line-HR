@@ -1,0 +1,24 @@
+@media (min-width: 600px) {
+  .logo-sm {
+    width: 15%;
+    object-fit: scale-down;
+  }
+
+  .menu-icon {
+    font-size: 38px !important;
+  }
+
+  .slide-menu {
+    width: 45%;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
