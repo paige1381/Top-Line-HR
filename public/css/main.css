@@ -35,6 +35,12 @@ header {
   object-fit: scale-down;
 }
 
+.logo-lg {
+  width: 50%;
+  object-fit: scale-down;
+}
+
+
 .menu-icon {
   margin: 0;
   font-size: 32px !important;
@@ -91,9 +97,6 @@ header {
   left: 0;
 }
 
-.logo-text {
-  text-align: center;
-}
 
 h2 {
   margin: 0;
@@ -119,7 +122,13 @@ h6 {
   margin: 0;
   padding: 5px 0;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 8px;
+}
+
+.logo-text {
+  text-align: center;
+  width: 50%;
+  padding-top: 10px;
 }
 
 .section {
@@ -150,8 +159,6 @@ section {
   margin-right: 15px;
   box-sizing: border-box;
 }
-
-
 
 footer {
   display: flex;
