@@ -229,7 +229,7 @@ main {
 
 .overlay {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   z-index: 3;
   bottom: 25px;
   left: 0;
@@ -238,6 +238,20 @@ main {
   letter-spacing: 1px;
   font-size: 20px;
   line-height: 28px;
+}
+
+.vision-image {
+  height: 500px;
+}
+
+.vision {
+  width: 85%;
+  right: 0;
+  left: auto;
+}
+
+.vision > p {
+  font-size: 14px;
 }
 
 .media-snapshots {
