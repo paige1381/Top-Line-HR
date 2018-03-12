@@ -223,6 +223,16 @@ section {
   bottom: 30px;
 }
 
+.solutions-overlay {
+  font-size: 26px;
+  line-height: 34px;
+  width: 85%;
+}
+
+.solutions-text {
+  letter-spacing: .25px;
+}
+
 .inline {
   display: inline;
 }
@@ -343,6 +353,59 @@ footer {
   padding: 0;
 }
 
+.input {
+  border: 1px solid lightgrey;
+  width: 100%;
+  padding: 10px;
+  letter-spacing: .5px;
+}
+
+.checkbox {
+  align-items: center;
+}
+
+.checkbox > p {
+  font-family: 'Arial';
+  font-size: 14px;
+}
+
+textarea {
+  height: 150px;
+  font-family: 'Arial';
+}
+
+button {
+  padding: 10px;
+  font-family: 'Arial';
+  width: 50%;
+  align-self: flex-end;
+  background-color: #154C68;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+.input, .checkbox {
+  margin-bottom: 20px;
+}
+
+.email-input {
+  margin-bottom: 5px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -361,4 +424,8 @@ footer {
 
 .desktop {
   display: none;
+}
+
+.mobile {
+  display: flex;
 }

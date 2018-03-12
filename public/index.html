@@ -17,7 +17,7 @@
   <body>
 
     <header ng-controller="MenuController as ctrl">
-      <nav class="mobile">
+      <nav class="mobile tablet">
         <div class="header row">
           <i class="material-icons menu-icon" ng-click="ctrl.mobileMenu = !ctrl.mobileMenu">menu</i>
           <a href="/home" class="logo-link">
@@ -32,37 +32,37 @@
         </a>
         <div class="column menu">
           <div class="row menu-sm">
-            <a class="menu-link row" href="/events">
+            <a class="menu-link-top row" href="/events">
               <h5>Events</h5>
             </a>
-            <a class="menu-link row" href="/blog">
+            <a class="menu-link-top row" href="/blog">
               <h5>Blog</h5>
             </a>
-            <a class="menu-link row" href="#">
+            <a class="menu-link-top row" href="/contact">
               <h5>Contact</h5>
             </a>
-            <a class="menu-link row" href="#">
+            <a class="menu-link-top row" href="/about">
               <h5>About</h5>
             </a>
           </div>
           <div class="row menu-bg">
-            <a class="menu-link row" href="#">
+            <a class="menu-link-bottom row" href="/coaching">
               <h4>Coaching</h4>
             </a>
-            <a class="menu-link row" href="#">
+            <a class="menu-link-bottom row" href="/teams">
               <h4>Executive Teams</h4>
             </a>
-            <a class="menu-link row" href="#">
+            <a class="menu-link-bottom row" href="/sales">
               <h4>Sales</h4>
             </a>
-            <a class="menu-link row" href="#">
+            <a class="menu-link-bottom row" href="/hr">
               <h4>HR</h4>
             </a>
           </div>
         </div>
       </nav>
 
-      <div class="mobile menu-bkgd" ng-click="ctrl.mobileMenu = false" ng-class="ctrl.mobileMenu? 'slide' : ''">
+      <div class="mobile tablet menu-bkgd" ng-click="ctrl.mobileMenu = false" ng-class="ctrl.mobileMenu? 'slide' : ''">
       </div>
       <div class="slide-menu column" ng-class="ctrl.mobileMenu? 'slide' : ''">
         <a class="menu-link row" href="/events" ng-click="ctrl.mobileMenu = false">
@@ -73,27 +73,27 @@
           <h5>Blog</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
+        <a class="menu-link row" href="/contact" ng-click="ctrl.mobileMenu = false">
           <h5>Contact</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
+        <a class="menu-link row" href="/about" ng-click="ctrl.mobileMenu = false">
           <h5>About</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
+        <a class="menu-link row" href="/coaching" ng-click="ctrl.mobileMenu = false">
           <h5>Coaching</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
+        <a class="menu-link row" href="/teams" ng-click="ctrl.mobileMenu = false">
           <h5>Executive Teams</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
+        <a class="menu-link row" href="/sales" ng-click="ctrl.mobileMenu = false">
           <h5>Sales</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
+        <a class="menu-link row" href="/hr" ng-click="ctrl.mobileMenu = false">
           <h5>HR</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
