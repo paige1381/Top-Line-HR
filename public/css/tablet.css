@@ -1,4 +1,11 @@
 @media (min-width: 600px) {
+  .logo-sm {
+    width: 200px;
+    height: 50px;
+    object-fit: scale-down;
+    margin-bottom: 20px;
+  }
+
   .menu-icon {
     font-size: 38px !important;
   }
@@ -11,31 +18,39 @@
     padding: 10px 20px;
   }
 
+  footer {
+    padding: 30px 20px;
+  }
+
   section {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
   }
 
-  .section {
-    margin-right: 5px;
+  .blog {
     width: 57%;
   }
 
-  .wrapper {
+  .events {
     width: 40%;
-    margin: 0 0 0 10px;
   }
 
-  .background {
-    background-color: #dedfe1;
-    padding: 0 15px 15px 15px;
+  .listing {
+    justify-content: space-around;
+  }
+
+  .home-image, .vision-image {
     width: 100%;
+    height: 400px;
+    position: relative;
     margin: 0;
+    padding: 0;
+    overflow-y: hidden;
   }
 
-  .media-header {
-    margin-top: 10px;
+  .vision-image {
+    height: 500px;
   }
 
   .overlay {
@@ -44,25 +59,17 @@
     width: 60%;
   }
 
-  .vision {
-    width: 80%;
-  }
-
-  .media-snapshots {
-    flex-direction: row;
-  }
-
-  .image-lg {
-    height: 400px;
+  .card {
+    width: 40%;
   }
 
   .link-width {
-    width: 40%;
+    width: 45%;
     align-items: flex-start;
   }
 
-  .social-media {
-    justify-content: center;
+  .section-width {
+    width: 30%;
   }
 
   .tablet {

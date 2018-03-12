@@ -6,7 +6,17 @@ app.controller('MenuController', ['$http', function($http) {
 
 app.controller('HomeController', ['$http', function($http) {
 
-}])
+}]);
+
+app.controller('EventsController', ['$http', function($http) {
+
+}]);
+
+app.controller('BlogController', ['$http', function($http) {
+
+}]);
+
+
 
 app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode({ enabled: true });
@@ -16,6 +26,20 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
     controller: 'HomeController',
     controllerAs: 'ctrl'
   });
+
+  $routeProvider.when('/events', {
+    templateUrl: 'events.html',
+    controller: 'EventsController',
+    controllerAs: 'ctrl'
+  });
+
+  $routeProvider.when('/blog', {
+    templateUrl: 'blog.html',
+    controller: 'BlogController',
+    controllerAs: 'ctrl'
+  });
+
+
 
   $routeProvider.otherwise({
     redirectTo: '/home'

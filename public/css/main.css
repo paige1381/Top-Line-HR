@@ -27,18 +27,6 @@ a {
   color: black;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 header {
   border-bottom: 1px solid grey;
   padding: 10px;
@@ -57,8 +45,12 @@ nav {
   width: 100%;
 }
 
-.logo-lg {
+.logo-link {
   width: 50%;
+}
+
+.logo-lg {
+  width: 100%;
   object-fit: scale-down;
 }
 
@@ -134,63 +126,101 @@ p {
 h2 {
   margin: 0;
   font-size: 24px;
-  padding: 10px 0;
+  padding: 0 0 10px 0;
   width: 100%;
 }
 
 h3 {
   margin: 0;
   font-size: 20px;
-  padding: 5px 0;
+  padding: 0 0 5px 0;
 }
 
 h4 {
   margin: 0;
   font-weight: normal;
   font-size: 18px;
-  padding: 2.5px 0;
+  padding: 0 0 2.5px 0;
 }
 
 h5 {
   margin: 0;
   font-weight: normal;
   font-size: 16px;
-  padding: 2.5px 0;
+  padding: 0 0 2.5px 0;
 }
 
 h6 {
   margin: 0;
-  padding: 2.5px 0;
+  padding: 0 0 2.5px 0;
   font-weight: normal;
   font-size: 8px;
+}
+
+.heading {
+  border-bottom: 1px solid black;
+  margin: 0 0 15px 0;
+}
+
+section {
+  margin: 20px 0;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .section {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-section {
-  margin: 0 0 20px 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
+  margin: 10px 0;
 }
 
 .sub-section {
-  margin: 0 0 10px 0;
-  padding: 0;
+  margin: 0 0 15px 0;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.link-width {
-  width: 40%;
-  align-items: flex-start;
+.home-image, .vision-image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.vision-image {
+  height: 500px;
+}
+
+.image-lg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 3;
+  bottom: 25px;
+  left: 0;
+  padding: 20px;
+  width: 70%;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.vision-overlay {
+  width: 85%;
+  right: 0;
+  left: auto;
+  bottom: 30px;
 }
 
 .inline {
@@ -213,10 +243,9 @@ main {
   width: 100%;
 }
 
-.image-lg {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+.link-width {
+  width: 40%;
+  align-items: flex-start;
 }
 
 .image-sm {
@@ -226,56 +255,32 @@ main {
   margin: 0 10px 0 0;
 }
 
-.overlay {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.85);
-  z-index: 3;
-  bottom: 25px;
-  left: 0;
-  padding: 20px;
-  width: 70%;
-  letter-spacing: 1px;
-  font-size: 20px;
-  line-height: 28px;
+.image-div {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow-y: hidden;
 }
 
-.vision-statement {
-  margin: 0;
+.image-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.vision-image {
-  height: 500px;
-}
-
-.vision {
-  width: 85%;
-  right: 0;
-  left: auto;
-}
-
-.vision > p {
-  font-size: 14px;
-}
-
-.media-snapshots {
+.media {
   flex-direction: column;
   padding: 0 10px;
 }
 
-.media-header {
-  border-bottom: 1px solid black;
-  margin-bottom: 20px;
-}
-
 .blog-post {
   border-bottom: 1px solid #bcbdbf;
-  margin-bottom: 20px;
   padding-bottom: 15px;
 }
 
 .more-link {
   font-weight: bold;
-  padding: 5px 0;
+  padding: 0;
 }
 
 .sub-title > h5 {
@@ -288,8 +293,37 @@ main {
   margin-bottom: 5px;
 }
 
-.background {
-  margin-top: 30px;
+.card {
+  border: 1px solid #154C68;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.card-section {
+  padding: 15px 15px 10px 15px;
+  width: 100%;
+}
+
+.card-overlay {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 3;
+  bottom: 15px;
+  left: 0;
+  padding: 10px;
+  width: 80%;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.card-link {
+  padding: 15px;
+  background-color: #154C68;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: normal;
+  width: 100%;
 }
 
 .footer {
@@ -300,9 +334,25 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 30px 10px;
+  padding: 20px 10px;
   box-sizing: border-box;
   background-color: #dedfe1;
+}
+
+.contact {
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .tablet {

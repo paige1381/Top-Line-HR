@@ -20,20 +20,22 @@
       <nav class="mobile">
         <div class="header row">
           <i class="material-icons menu-icon" ng-click="ctrl.mobileMenu = !ctrl.mobileMenu">menu</i>
-          <img class="logo-lg" src="../images/TopLineHRLogo.svg">
+          <a href="/home" class="logo-link">
+            <img class="logo-lg" src="../images/TopLineHRLogo.svg">
+          </a>
         </div>
       </nav>
 
       <nav class="desktop header row">
-        <div class="column logo-header">
+        <a href="/home" class="column logo-header">
           <img class="logo-lg" src="../images/TopLineHRLogo.svg">
-        </div>
+        </a>
         <div class="column menu">
           <div class="row menu-sm">
-            <a class="menu-link row" href="#">
+            <a class="menu-link row" href="/events">
               <h5>Events</h5>
             </a>
-            <a class="menu-link row" href="#">
+            <a class="menu-link row" href="/blog">
               <h5>Blog</h5>
             </a>
             <a class="menu-link row" href="#">
@@ -63,35 +65,35 @@
       <div class="mobile menu-bkgd" ng-click="ctrl.mobileMenu = false" ng-class="ctrl.mobileMenu? 'slide' : ''">
       </div>
       <div class="slide-menu column" ng-class="ctrl.mobileMenu? 'slide' : ''">
-        <a class="menu-link row" href="#">
+        <a class="menu-link row" href="/events" ng-click="ctrl.mobileMenu = false">
           <h5>Events</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#">
+        <a class="menu-link row" href="/blog" ng-click="ctrl.mobileMenu = false">
           <h5>Blog</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#">
+        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
           <h5>Contact</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#">
+        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
           <h5>About</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#">
+        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
           <h5>Coaching</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#">
+        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
           <h5>Executive Teams</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#">
+        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
           <h5>Sales</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
-        <a class="menu-link row" href="#">
+        <a class="menu-link row" href="#" ng-click="ctrl.mobileMenu = false">
           <h5>HR</h5>
           <i class="material-icons arrow-icon">chevron_right</i>
         </a>
@@ -106,7 +108,7 @@
         <img class="logo-sm" src="../images/TopLineHRLogo.svg">
         <h2>Contact Us</h2>
         <section class="contact">
-          <div class="sub-section section-width">
+          <div class="section section-width">
             <div class="sub-section">
               <h5>805 Merchant Lee Ct</h5>
               <h5>Manakin Sabot, VA</h5>
@@ -115,7 +117,7 @@
             <h5>+1.4344093357</h5>
             <a href="mailto:tom.corbitt@toplinehr.com" class="underline sub-section"><h5>tom.corbitt@toplinehr.com</h5></a>
           </div>
-          <section class="row section-width">
+          <div class="section row section-width">
             <div class="column link-width">
               <a href="#">
                 <h5>Events</h5>
@@ -144,14 +146,14 @@
                 <h5>HR</h5>
               </a>
             </div>
-          </section>
-          <section class="social-media section-width">
+          </div>
+          <div class="section section-width">
             <div class="row">
               <a href="#"><img src="../images/twitter.svg" class="social-media-icon"></a>
               <a href="#"><img src="../images/linkedin-logo.svg" class="social-media-icon"></a>
               <a href="#"><img src="../images/facebook-letter-logo.svg" class="social-media-icon"></a>
             </div>
-          </section>
+          </div>
         </section>
         <h6>
           Icons made by <a href="https://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>

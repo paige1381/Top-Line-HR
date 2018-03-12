@@ -28,7 +28,7 @@
   }
 
   section {
-    margin-bottom: 40px;
+    padding: 0 50px;
   }
 
   .header {
@@ -88,10 +88,6 @@
     font-size: 16px;
   }
 
-  .image-lg {
-    height: 450px;
-  }
-
   .overlay {
     position: absolute;
     z-index: 3;
@@ -102,19 +98,6 @@
     font-size: 28px;
     line-height: 36px;
     bottom: auto;
-  }
-
-  .vision {
-    width: 80%;
-    top: 35%;
-  }
-
-  .media-snapshots {
-    padding: 0 50px;
-  }
-
-  .section {
-    width: 62%;
   }
 
   .image-sm {
@@ -133,8 +116,25 @@
     padding: 0;
   }
 
+  .vision-overlay {
+    width: 80%;
+    right: 0;
+    left: auto;
+    bottom: 30px;
+  }
+
+  .vision-overlay > p {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+  }
+
+  .card {
+    width: 30%;
+  }
+
   footer {
-    padding: 20px 50px;
+    padding: 50px;
   }
 
   .footer {
@@ -143,7 +143,7 @@
   }
 
   .contact {
-      justify-content: flex-start;
+    justify-content: flex-start;
   }
 
   .section-width {
