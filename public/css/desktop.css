@@ -3,30 +3,69 @@
     display: flex;
   }
 
+  .inline {
+    display: inline;
+  }
+  a:hover {
+    opacity: .5;
+  }
+
   nav {
-    width: 1280;
+    max-width: 1280px;
     margin: auto;
     box-sizing: border-box;
   }
 
+  header {
+    padding: 10px 50px;
+    border-bottom: none;
+    box-sizing: border-box;
+  }
+
+  main {
+    width: 1280px;
+    margin: auto;
+  }
+
   .header {
     align-items: flex-end;
+    box-sizing: border-box;
+  }
+
+  .logo-sm {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+
+  .logo-lg {
+    width: 60%;
+    object-fit: scale-down;
+  }
+
+  .logo-header {
+    width: 50%;
+    box-sizing: border-box;
   }
 
   .menu-link {
-    margin: 10px 0;
+    margin: 0;
     border: none;
   }
 
   .menu {
     width: 50%;
     align-items: flex-end;
+    font-family: 'Nexa';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-sizing: border-box;
   }
 
   .menu-sm {
-    width: 60%;
+    width: 75%;
     justify-content: space-between;
     padding: 0 10px 10px 0;
+    box-sizing: border-box;
   }
 
   .menu-bg {
@@ -34,21 +73,66 @@
     justify-content: space-between;
     border-top: 1px lightgrey solid;
     padding: 10px 10px 0 0;
+    box-sizing: border-box;
   }
 
   h4 {
-    font-size: 20px;
-  }
-
-  h5 {
     font-size: 18px;
   }
 
+  h5 {
+    font-size: 16px;
+  }
 
+  .image-lg {
+    height: 450px;
+  }
 
+  .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 3;
+    top: 40%;
+    padding: 50px;
+    width: 45%;
+    letter-spacing: 1.5px;
+    font-size: 28px;
+    line-height: 36px;
+    bottom: auto;
+  }
 
+  .media-snapshots {
+    padding: 0 50px;
+  }
 
+  .section {
+    width: 62%;
+  }
 
+  .image-sm {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 10px 0 0;
+  }
+
+  .wrapper {
+    width: 35%;
+  }
+
+  .more-link {
+    font-weight: bold;
+    padding: 0;
+  }
+
+  footer {
+    padding: 20px 50px;
+  }
+
+  .footer {
+    width: 1280px;
+    margin: auto;
+  }
 
   .social-media-icon {
     width: 30px;
