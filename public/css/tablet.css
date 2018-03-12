@@ -18,7 +18,7 @@
   }
 
   .section {
-    margin-top: 5px;
+    margin-right: 5px;
     width: 57%;
   }
 
@@ -29,9 +29,13 @@
 
   .background {
     background-color: #dedfe1;
-    padding: 5px 15px 15px 15px;
+    padding: 0 15px 15px 15px;
     width: 100%;
     margin: 0;
+  }
+
+  .media-header {
+    margin-top: 10px;
   }
 
   .overlay {
@@ -50,6 +54,15 @@
 
   .image-lg {
     height: 400px;
+  }
+
+  .link-width {
+    width: 40%;
+    align-items: flex-start;
+  }
+
+  .social-media {
+    justify-content: center;
   }
 
   .tablet {
