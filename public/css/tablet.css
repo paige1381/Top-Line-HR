@@ -121,8 +121,28 @@
     margin-bottom: 20px;
   }
 
+  .login-section, .register-section {
+    width: 50%;
+    border-bottom: none;
+    padding: 0 0 0 20px;
+  }
+
+  .login-section {
+    border-right: 1px solid black;
+    padding: 0 20px 0 0;
+    justify-content: space-between;
+  }
+
+  .close {
+    margin: 15px;
+  }
+
   .space-between {
     justify-content: flex-end;
+  }
+
+  .modal {
+    margin: 200px auto;
   }
 
   .mobile {
