@@ -39,6 +39,7 @@
 
   .listing {
     justify-content: space-around;
+    margin-top: 30px;
   }
 
   .home-image, .vision-image {
@@ -66,7 +67,7 @@
   }
 
   .card {
-    width: 40%;
+    width: 45%;
   }
 
   .link-width {

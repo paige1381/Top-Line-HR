@@ -12,7 +12,15 @@ app.controller('EventsController', ['$http', function($http) {
 
 }]);
 
+app.controller('EventController', ['$http', function($http) {
+
+}]);
+
 app.controller('BlogController', ['$http', function($http) {
+
+}]);
+
+app.controller('BlogPostController', ['$http', function($http) {
 
 }]);
 
@@ -57,11 +65,25 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
     controllerAs: 'ctrl'
   });
 
+  $routeProvider.when('/event', {
+    templateUrl: 'event.html',
+    controller: 'EventController',
+    controllerAs: 'ctrl'
+  });
+
+
+  $routeProvider.when('/blogPost', {
+    templateUrl: 'blogPost.html',
+    controller: 'BlogPostController',
+    controllerAs: 'ctrl'
+  });
+
   $routeProvider.when('/blog', {
     templateUrl: 'blog.html',
     controller: 'BlogController',
     controllerAs: 'ctrl'
   });
+
 
   $routeProvider.when('/contact', {
     templateUrl: 'contact.html',

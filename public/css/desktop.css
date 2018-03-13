@@ -83,7 +83,7 @@
     width: 100%;
     justify-content: space-between;
     border-top: 1px lightgrey solid;
-    padding: 10px 10px 0 0;
+    padding: 10px 10px 0 10px;
     box-sizing: border-box;
   }
 
@@ -137,7 +137,8 @@
   }
 
   .solutions-overlay {
-    top: 55%;
+    top: auto;
+    bottom: 40px;
   }
 
 

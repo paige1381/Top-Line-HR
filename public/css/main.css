@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'Helvetica';
+  font-family: 'Arial';
   width: 100%;
   margin: 0;
 }
@@ -160,7 +160,17 @@ h6 {
 .heading {
   border-bottom: 1px solid black;
   margin: 0 0 15px 0;
+  font-family: 'Nexa';
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+.sub-heading {
+  margin: 0 0 5px 0;
+  font-family: 'Nexa';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 
 section {
   margin: 20px 0;
@@ -214,6 +224,8 @@ section {
   letter-spacing: 1px;
   font-size: 20px;
   line-height: 28px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .vision-overlay {
@@ -221,12 +233,24 @@ section {
   right: 0;
   left: auto;
   bottom: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+
+.vision-overlay > h2 {
+  font-family: 'Nexa Bold';
+  text-transform: uppercase;
 }
 
 .solutions-overlay {
   font-size: 26px;
   line-height: 34px;
   width: 85%;
+  font-family: 'Nexa Bold';
+  text-transform: uppercase;
 }
 
 .solutions-text {
@@ -325,6 +349,10 @@ main {
   letter-spacing: 1px;
   font-size: 20px;
   line-height: 28px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: 'Nexa Bold';
+  text-transform: uppercase;
 }
 
 .card-link {
