@@ -406,6 +406,23 @@ button:hover {
   margin-bottom: 5px;
 }
 
+.about {
+  margin-bottom: 35px;
+}
+
+.about-section {
+  padding: 15px;
+  letter-spacing: .5px;
+  line-height: 22px;
+}
+
+.event-div {
+  width: 100%;
+  height: 145px;
+  position: relative;
+  overflow-y: hidden;
+}
+
 .row {
   display: flex;
   flex-direction: row;
