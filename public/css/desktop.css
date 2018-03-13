@@ -172,6 +172,15 @@
     height: 30px;
   }
 
+  .create-menu {
+    width: 45%;
+  }
+
+  .create-button {
+    width: 23%;
+    margin-left: 10px;
+  }
+
 
   .mobile {
     display: none;

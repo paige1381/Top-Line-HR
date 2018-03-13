@@ -92,6 +92,39 @@
     margin-top: 0;
   }
 
+  .create-menu {
+    width: 60%;
+  }
+
+  .create-button {
+    width: 30%;
+    margin-left: 10px;
+  }
+
+  .date-section {
+    flex-direction: row;
+  }
+
+  .input-label {
+    width: auto;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  .input-sm {
+    width: 30%;
+  }
+
+  .input-section {
+    background-color: rgba(211, 211, 211, .4);
+    padding: 25px 20px 5px 20px;
+    margin-bottom: 20px;
+  }
+
+  .space-between {
+    justify-content: flex-end;
+  }
+
   .mobile {
     display: none;
   }

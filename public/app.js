@@ -48,6 +48,25 @@ app.controller('HRController', ['$http', function($http) {
 
 }]);
 
+app.controller('CreateController', ['$http', function($http) {
+
+}]);
+
+app.controller('BlogFormController', ['$http', function($http) {
+
+}]);
+
+app.controller('EventFormController', ['$http', function($http) {
+
+}]);
+
+app.controller('AdminFormController', ['$http', function($http) {
+
+}]);
+
+app.controller('CredentialsController', ['$http', function($http) {
+
+}]);
 
 
 app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
@@ -83,7 +102,6 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
     controller: 'BlogController',
     controllerAs: 'ctrl'
   });
-
 
   $routeProvider.when('/contact', {
     templateUrl: 'contact.html',
@@ -121,6 +139,35 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
     controllerAs: 'ctrl'
   });
 
+  $routeProvider.when('/create', {
+    templateUrl: 'create.html',
+    controller: 'CreateController',
+    controllerAs: 'ctrl'
+  });
+
+  $routeProvider.when('/blogForm', {
+    templateUrl: 'blogForm.html',
+    controller: 'BlogFormController',
+    controllerAs: 'ctrl'
+  });
+
+  $routeProvider.when('/eventForm', {
+    templateUrl: 'eventForm.html',
+    controller: 'EventFormController',
+    controllerAs: 'ctrl'
+  });
+
+  $routeProvider.when('/adminForm', {
+    templateUrl: 'adminForm.html',
+    controller: 'AdminFormController',
+    controllerAs: 'ctrl'
+  });
+
+  $routeProvider.when('/credentials', {
+    templateUrl: 'credentials.html',
+    controller: 'CredentialsController',
+    controllerAs: 'ctrl'
+  });
 
   $routeProvider.otherwise({
     redirectTo: '/home'

@@ -1,0 +1,44 @@
+<div class="home-image">
+  <img class="image-lg" src="https://images.unsplash.com/photo-1511847628852-980ec678a438?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=13f1461f96f13dc4ddadb4a37d33c0bc&auto=format&fit=crop&w=1350&q=80">
+  <div class="overlay solutions-overlay">
+    Add an Event
+  </div>
+</div>
+
+<form>
+  <section class="column contact-section">
+    <a class="create-link row" href="/create">
+      <i class="material-icons arrow-icon">chevron_left</i>
+      <h5 class="create-link-text">Back to Admin Dashboard</h5>
+    </a>
+    <input type="text" class="input" required placeholder="Title*">
+    <div class="row file-row">
+      <p class="input-label">Image*</p><input type="file" class="file-input">
+    </div>
+    <div class="input-section">
+      <h5>Address</h5>
+      <input type="text" class="input" placeholder="Street Address">
+      <input type="text" class="input" required placeholder="City, State*">
+      <input type="text" class="input input-sm" placeholder="Zip">
+      <input type="text" class="input" placeholder="Country">
+    </div>
+    <div class="input-section">
+      <h5>Date(s)</h5>
+      <div class="date-section">
+        <div class="row file-row">
+          <p class="input-label">Start Date*</p>
+          <input type="date" class="date-input" required>
+        </div>
+        <div  class="row file-row">
+          <p class="input-label">End Date*</p>
+          <input type="date" class="date-input" required>
+        </div>
+      </div>
+    </div>
+    <textarea type="text" required class="input" placeholder="Details*"></textarea>
+    <div class="row space-between">
+      <button class="form-button create-button">Reset</button>
+      <button class="form-button create-button">Publish</button>
+    </div>
+  </section>
+</form>
